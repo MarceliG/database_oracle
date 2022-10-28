@@ -1,0 +1,132 @@
+UPDATE BUILDING
+SET
+    BUILDING_NAME = ?,
+    STREET = ?,
+    STREET_NUMBER = ?,
+    ZIP_CODE = ?,
+    CITY = ?,
+    COUNTRY = ?,
+    FLOORS_NUMBER = ?
+WHERE
+    BUILDING_ID = ?;
+
+UPDATE COMPUTER
+SET
+    ROOM_ID = ?,
+    COMPUTER_NAME = ?,
+    SERIAL_NUMBER = ?,
+    MANUFACTURER = ?,
+    TYPE = ?,
+    CPU_ID = ?,
+    GPU_ID = ?,
+    RAM = ?,
+    WARRANTY_DATE = ?,
+    CONNECTORS = ?,
+    DESCRIPTION = ?
+WHERE
+    COMPUTER_ID = ?;
+
+UPDATE CPU
+SET
+    CPU_NAME = ?,
+    NUMBER_OF_THREADS = ?,
+    FREQUENCY = ?,
+    COMPUTERGPU = ?
+WHERE
+    CPU_ID = ?;
+
+UPDATE GPU
+SET
+    GPU_NAME = ?,
+    MEMORY = ?
+WHERE
+    GPU_ID = ?;
+
+UPDATE HDD
+SET
+    COMPUTER_ID = ?,
+    HDD_ID = ?,
+    HDD_NAME = ?,
+    MEMORY = ?
+WHERE;
+
+UPDATE MONITOR
+SET
+    ROOM_ID = ?,
+    COMPUTER_ID = ?,
+    MANUFACTURER = ?,
+    SERIAL_NUMBER = ?,
+    DIAGONAL = ?,
+    RESOLUTION = ?,
+    REFRESH_RATE = ?,
+    WARRANTY_DATE = ?,
+    COMPUTERCPU_ID = ?,
+    COMPUTERGPU = ?
+WHERE
+    MONITOR_ID = ?;
+
+UPDATE PRINTER
+SET
+    ROOM_ID = ?,
+    PRINTER_NAME = ?,
+    MANUFACTURER = ?,
+    SERIAL_NUMBER = ?,
+    COLOR_PRINTING = ?,
+    SCANNER = ?,
+    WARRANTY_DATE = ?
+WHERE
+    PRINTER_ID = ?;
+
+UPDATE RAM
+SET
+    COMPUTER_ID = ?,
+    RAM_ID = ?,
+    RAM_NAME = ?,
+    SPEED = ?
+WHERE;
+
+UPDATE ROOM
+SET
+    BUILDING_ID = ?,
+    ROOM_NAME = ?,
+    FLOOR = ?,
+    ROOM_NUMBER = ?
+WHERE
+    ROOM_ID = ?;
+
+UPDATE SOFTWARE
+SET
+    COMPUTER_ID = ?,
+    SOFTWARE_NAME = ?,
+    MANUFACTURER = ?,
+    LICENSE_KEY = ?,
+    EXPIRE_DATE = ?,
+    COMPUTERCPU_ID = ?,
+    COMPUTERGPU = ?
+WHERE
+    SOFTWARE_ID = ?;
+
+UPDATE SSD
+SET
+    COMPUTER_ID = ?,
+    SSD_ID = ?,
+    SSD_NAME = ?,
+    MEMORY = ?
+WHERE;
+
+UPDATE "user"
+SET
+    LOGIN = ?,
+    PASSWORD = ?,
+    EMAIL = ?,
+    FIRST_NAME = ?,
+    SURNAME = ?,
+    LAST_LOGIN = ?
+WHERE
+    USER_ID = ?;
+
+UPDATE USER_BUILDING
+SET
+WHERE
+    USER_ID = ?
+    AND BUILDING_ID = ?;
